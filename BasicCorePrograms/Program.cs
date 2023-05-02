@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Basic Core Program");
-            Console.WriteLine("1:Flip coinn\n2:Leap Year\n3:Power of two\n4:Harmonics\n5:Factors\n6:Find Quotients");
+            Console.WriteLine("1:Flip coinn\n2:Leap Year\n3:Power of two\n4:Harmonics\n5:Factors\n6:Find Quotients\n7:Swapping Two Numbers");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -32,6 +32,10 @@
                 case 6:
                     FindQuotients findQuotient = new FindQuotients();
                     findQuotient.FindQuotient();
+                    break;
+                case 7:
+                    SwappingTwoNumbers swapingNumbers = new SwappingTwoNumbers();
+                    swapingNumbers.SwappingTwoNumber();
                     break;
                 default:
                     Console.WriteLine("Please enter right option");
