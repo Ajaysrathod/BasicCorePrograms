@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Basic Core Program");
-            Console.WriteLine("1:Flip coinn\n2:Leap Year\n3:Power of two\n4:Harmonics\n5:Factors");
+            Console.WriteLine("1:Flip coinn\n2:Leap Year\n3:Power of two\n4:Harmonics\n5:Factors\n6:Find Quotients");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -28,6 +28,10 @@
                 case 5:
                     FactorsUC5 factors = new FactorsUC5();
                     factors.FactorsNumber();
+                    break;
+                case 6:
+                    FindQuotients findQuotient = new FindQuotients();
+                    findQuotient.FindQuotient();
                     break;
                 default:
                     Console.WriteLine("Please enter right option");
